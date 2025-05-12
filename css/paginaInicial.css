@@ -1,0 +1,421 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.info .icons button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+body {
+    background: linear-gradient(180deg,
+            rgba(163, 206, 243, 1) 0%,
+            rgba(75, 111, 142, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    background-image: url("../img/image\ 13.png");
+    /* ou o nome da sua imagem corrigida */
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    /* ou 'contain' se quiser manter proporções exatas */
+    background-position: center;
+    position: absolute;
+    inset: 0;
+    opacity: 1;
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 970px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    height: 20vh;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+
+.icons img {
+    width: 35px !important;
+    height: 35px !important;
+}
+
+
+
+.header img {
+    width: 11vw;
+    height: 24vh;
+    z-index: 1;
+}
+
+.effect {
+    background: #EBC76A;
+    background: radial-gradient(circle, rgba(235, 199, 106, 1) 0%, rgba(252, 70, 107, 0) 100%);
+    width: 8vw;
+    height: 15vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.effect img {
+    height: 10vh;
+    width: 5vw;
+}
+
+.main {
+    height: 50vh;
+    width: 100%;
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listaTarefas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: auto;
+    /* permite rolagem */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    max-height: 50vh;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+
+.titlle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 5px;
+}
+
+.titlle img {
+    height: 30px;
+    width: 30px;
+}
+
+
+
+.tarefa {
+    position: relative;
+    padding: 2px;
+    /* espaço para o gradiente-borda */
+    border-radius: 15px;
+    background: linear-gradient(135deg, #0BAF0B, #84D384, #0BAF0B);
+    /* gradiente metálico */
+    box-shadow: 0 0 10px 2px rgba(11, 175, 11, 0.4);
+    height: 25vh;
+    width: 65vw;
+}
+
+.tarefa .conteudo {
+    background-color: #A3CEF3;
+    /* cor do fundo interno */
+    border-radius: 13px;
+    /* um pouco menor para encaixar certinho */
+    padding: 20px;
+    color: #0F1E2B;
+    font-family: "Inria Serif", serif;
+    font-weight: 300;
+    font-style: normal;
+    height: 24vh;
+    overflow-y: auto;
+    overflow: auto;
+    /* permite rolagem */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+}
+
+.tarefa .conteudo::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari e Edge moderno */
+}
+
+.edit {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.lixo {
+    width: 20px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.crud {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.linha-final {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkpoint {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    /* Azul clarinho */
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+.addTask {
+    width: 50px;
+    height: 50px;
+    background-color: #EBC76A;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.addTask h2 {
+    font-size: xx-large;
+}
+
+.editPopUp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A3CEF3;
+    border-radius: 30px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    font-family: "Inria Serif", serif;
+    background-color: #A3CEF3;
+
+}
+
+.formulario input {
+    border: none;
+    height: 30px;
+    width: 350px;
+    background-color: #4B6F8E;
+    color: white;
+    border-radius: 10px;
+    font-family: "Inria Serif", serif;
+
+}
+
+.formulario input::-webkit-input-placeholder {
+    color: white;
+}
+
+.formulario textarea::-webkit-input-placeholder {
+    color: white;
+}
+
+
+.formulario textarea {
+    border: none;
+    height: 30px;
+    width: 350px;
+    border-radius: 10px;
+    max-height: 100px;
+    max-width: 350px;
+    background-color: #4B6F8E;
+    color: white;
+    font-family: "Inria Serif", serif;
+
+}
+
+.formulario select {
+    height: 40px;
+    border-radius: 10px;
+    background-color: #4B6F8E;
+    border: #EBC76A 0.5px;
+    color: white;
+    font-family: "Inria Serif", serif;
+}
+
+.formulario .date {
+    display: flex;
+    flex-direction: row;
+    width: 125px;
+    gap: 30px;
+    align-items: center;
+
+}
+
+.formulario .date input {
+    width: 140px;
+    border-radius: 30px;
+    background-color: #4B6F8E;
+    color: #EBC76A;
+
+
+}
+
+.formulario .date input:focus {
+    outline: none;
+    /* Remove a borda padrão do navegador */
+    border: 0.7px solid #EBC76A;
+    background-color: #4B6F8E;
+    color: white;
+
+
+}
+
+.formulario input:focus {
+    outline: none;
+    /* Remove a borda padrão do navegador */
+    border: 0.7px solid #EBC76A;
+    background-color: #4B6F8E;
+    color: white;
+
+
+}
+
+.formulario textarea:focus {
+    outline: none;
+    /* Remove a borda padrão do navegador */
+    border: 0.7px solid #EBC76A;
+    background-color: #4B6F8E;
+    color: white;
+
+
+}
+
+
+.formulario select:focus {
+    outline: none;
+    /* Remove a borda padrão do navegador */
+    border: 0.7px solid #EBC76A;
+}
+
+
+
+
+.btn-confirmar {
+    background-color: #EBC76A !important;
+    color: #0F1E2B !important;
+    border: none !important;
+    border-radius: 8px;
+}
+
+.btn-cancelar {
+    background-color: #0F1E2B !important;
+    color: white !important;
+    border-radius: 8px;
+}
+
+.swal2-confirm {
+    background-color: #EBC76A !important;
+    color: #0F1E2B !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 8px 16px;
+}
+
+.swal2-cancel {
+    background-color: #0F1E2B !important;
+    color: white !important;
+    border-radius: 8px !important;
+    padding: 8px 16px;
+}
+
+.tarefa.concluida {
+    opacity: 0.7;
+    background-color: #d4f3e2;
+}
+
+.tarefa .checkpoint {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.tarefa.concluida .checkpoint {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/845/845646.png');
+    /* teste online */
+    background-size: cover;
+    background-color: transparent;
+}
+
+.tarefa.concluida .linha-final strong {
+    color: #0F1E2B !important;
+}
+
+.tarefa.concluida .crud {
+    display: none;
+}

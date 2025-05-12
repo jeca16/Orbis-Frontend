@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+}
+
+body.swal2-height-auto {
+    height: 100% !important
+  }
+  
+body {
+    background: linear-gradient(
+        180deg,
+        rgba(163, 206, 243, 1) 0%,
+        rgba(75, 111, 142, 1) 100%
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    background-image: url("../img/image\ 13.png"); /* ou o nome da sua imagem corrigida */
+    background-repeat: no-repeat;
+    background-size: 100% auto; /* ou 'contain' se quiser manter proporções exatas */
+    background-position: center;
+    position: absolute;
+    inset: 0;
+    opacity: 1; 
+    pointer-events: none; 
+    z-index: 0;
+}
+
+.login {
+    background-color: #2E6392;
+    height: 70vh;
+    width: 30vw;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1; /* fica acima da imagem decorativa */
+}
+
+.img{
+    width: 12vw;
+    height: 25vh;
+}
+
+.login p{
+    color: #0F1E2B;
+}
+
+.login a{
+    color: #EBC76A;
+    text-decoration: none;
+    font-style:italic;
+}
+
+.input-container img {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+.input-container input{
+    width: 20vw;
+    height: 30px;
+    border-radius: 20px;
+   border: none;
+   font-family: "Inria Serif", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.input-container input:focus{
+    outline: none; /* Remove a borda padrão do navegador */
+    border: 0.7px solid #EBC76A;
+}
+
+
+.input-container2 img {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+
+.input-container2 {
+    position: relative;
+    width: 100%;
+}
+
+.input-container2 input{
+    width: 20vw;
+    height: 30px;
+    border-radius: 20px;
+   border: none;
+   font-family: "Inria Serif", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.input-container2 input:focus{
+    outline: none; /* Remove a borda padrão do navegador */
+    border: 0.7px solid #EBC76A;
+}
+
+
+
+
+.login input{
+    width: 20vw;
+    height: 30px;
+    border-radius: 20px;
+   border: none;
+   font-family: "Inria Serif", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.login input:focus{
+    outline: none; /* Remove a borda padrão do navegador */
+    border: 0.7px solid #EBC76A;
+}
+
+
+.login button{
+    width: 15vw;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: #EBC76A;
+    font-family: "Inria Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: large;
+  color: #0F1E2B;
+  cursor: pointer;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/material_blue.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/paginaInicial.js" defer></script>
+    <link rel="stylesheet" href="../css/paginaInicial.css">
+    <link rel="icon" href="../img/image 3.png">
+    <title>Orbis</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <img src="../img/image 16.png" alt="logo">
+
+        <div class="info">
+            <div class="icons">
+                <img src="../img/filter.png" alt="filtro">
+                <button id="botaoDarkMode"><img src="../img/moon.png" alt="modo escuro" ></button>
+            </div>
+            <div class="effect">
+                <img src="../img/image 5.png" alt="">
+            </div>
+
+        </div>
+    </header>
+    <main class="main">
+        <div class="listaTarefas">
+            <div class="tarefa">
+                <div class="conteudo">
+                    <div class="titlle">
+                        <img src="../img/health-care.png" alt="">
+                        <h2> titulo da tarefa</h2>
+                        <div class="checkpoint"></div>
+                    </div>
+                    <p>lore ipsium dolor siamet, descrição da tarefa exemplo lore ipsium dolor siamet, descrição da
+                        tarefa exemplo lore ipsium dolor siamet, descrição da tarefa exemplo lore ipsium dolor siamet,
+                        descrição da tarefa exemplo</p><br>
+                    <div class="linha-final">
+                        <span>Data de início: 02/02/2025 &nbsp;&nbsp;&nbsp; <strong style="color: red">Data final:
+                                10/04/2025</strong></span>
+                        <div class="crud">
+                            <img src="../img/edit.png" alt="edição tarefa" class="edit" onclick="editPopupTarefa()">
+                            <img src="../img/trash-bin.png" alt="excluir" class="lixo" onclick="Exclusao()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarefa">
+                <div class="conteudo">
+                    <div class="titlle">
+                        <img src="../img/health-care.png" alt="">
+                        <h2> titulo da tarefa</h2>
+                        <div class="checkpoint"></div>
+                    </div>
+                    <p>lore ipsium dolor siamet, descrição da tarefa exemplo lore ipsium dolor siamet, descrição da
+                        tarefa exemplo lore ipsium dolor siamet, descrição da tarefa exemplo lore ipsium dolor siamet,
+                        descrição da tarefa exemplo</p><br>
+                    <div class="linha-final">
+                        <span>Data de início: 02/02/2025 &nbsp;&nbsp;&nbsp; <strong style="color: red">Data final:
+                                10/04/2025</strong></span>
+                        <div class="crud">
+                            <img src="../img/edit.png" alt="edição tarefa" class="edit">
+                            <img src="../img/trash-bin.png" alt="excluir" class="lixo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarefa">
+                <div class="conteudo">
+                    <div class="titlle">
+                        <img src="../img/health-care.png" alt="">
+                        <h2> titulo da tarefa</h2>
+                        <div class="checkpoint"></div>
+                    </div>
+                    <p>lore ipsium dolor siamet, descrição da tarefa exemplo lore ipsium dolor siamet, descrição da
+                        tarefa exemplo lore ipsium dolor siamet, descrição da tarefa exemplo lore ipsium dolor siamet,
+                        descrição da tarefa exemplo</p><br>
+                    <div class="linha-final">
+                        <span>Data de início: 02/02/2025 &nbsp;&nbsp;&nbsp; <strong style="color: red">Data final:
+                                10/04/2025</strong></span>
+                        <div class="crud">
+                            <img src="../img/edit.png" alt="edição tarefa" class="edit">
+                            <img src="../img/trash-bin.png" alt="excluir" class="lixo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tarefa">
+                <div class="conteudo">
+                    <div class="titlle">
+                        <img src="../img/health-care.png" alt="">
+                        <h2> titulo da tarefa</h2>
+                        <div class="checkpoint"></div>
+                    </div>
+                    <p>lore ipsium dolor siamet, descrição da tarefa exemplo lore ipsium dolor siamet, descrição da
+                        tarefa exemplo lore ipsium dolor siamet, descrição da tarefa exemplo lore ipsium dolor siamet,
+                        descrição da tarefa exemplo</p><br>
+                    <div class="linha-final">
+                        <span>Data de início: 02/02/2025 &nbsp;&nbsp;&nbsp; <strong style="color: red">Data final:
+                                10/04/2025</strong></span>
+                        <div class="crud">
+                            <img src="../img/edit.png" alt="edição tarefa" class="edit">
+                            <img src="../img/trash-bin.png" alt="excluir" class="lixo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </main>
+    <footer class="footer">
+
+        <div class="addTask" onclick="abrirPopupTarefa()">
+            <h2>+</h2>
+        </div>
+    </footer>
+
+</body>
+
+</html>

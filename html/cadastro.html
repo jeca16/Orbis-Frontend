@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/cadastro.js" defer></script>
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="icon" href="../img/image 3.png">
+    <title>Orbis</title>
+</head>
+
+<body class="body">
+    <div class="login">
+        <img src="../img/image 3.png" class="img">
+        <div>
+            <p>Insira seu Nome</p>
+            <input type="text" placeholder="Digite seu Nome" id="nome">
+        </div>
+        <div>
+            <p>Insira seu E-mail</p>
+            <input type="text" placeholder="Digite seu E-mail" id="email">
+        </div>
+        <div class="senha">
+            <p>Insira sua Senha</p>
+            <div class="input-container">
+                <input type="password" placeholder="Digite sua Senha" id="senha">
+                <img src="../img/eye.png" alt="view" id="eyeIcon">
+              </div>
+        </div>
+        <div class="senha2">
+            <p>confirme sua Senha</p>
+            <div class="input-container2">
+                <input type="password" placeholder="Confirme sua Senha" id="senha2">
+                <img src="../img/eye.png" alt="view" id="eyeIcon2">
+              </div>
+        </div>
+        <button onclick="criarConta()" id="login"> Entrar</button>
+        <p>Já tem conta? <a href="../index.html">Entre</a></p>
+    </div>
+
+</body>
+
+</html>
